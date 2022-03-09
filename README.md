@@ -1,8 +1,14 @@
 # pixel-adjust
+Interactively select and adjust specific pixels or regions within a single-band raster. Built with rasterio, matplotlib, and panel. This fork: doesn't use conda, uses pip.
 
-Interactively select and adjust specific pixels or regions within a single-band raster. Built with rasterio, matplotlib, and panel.
+<p align="center">
+<img src="usage.png" width="650">
+</p>
 
-To run locally:
- 1. Clone repo, install dependencies in environment.yml
- 2. Run bands.ipynb via Jupyter
- 3. ...or, deploy standalone app to a browser by running `panel serve bands.py --show` from within the repo directory
+## Dev using pip
+* `python3 -m venv venv`
+* `source venv/bin/activate`
+* `(venv) pip install -r requirements.txt`
+* `(venv) jupyter labextension install @pyviz/jupyterlab_pyviz`
+* `(venv) panel serve --show bands.ipynb` # run from notebook
+* `(venv) panel serve bands.py` # run from .py

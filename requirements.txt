@@ -1,0 +1,5 @@
+matplotlib
+panel
+rasterio
+jupyter
+jupyterlab
